@@ -8,36 +8,43 @@ def fill_cart():
             self.cart = []
 
 
-        def get_full_name(self):
-            return self.first_name + ' ' + self.last_name
+        def get_full_name(self, run, shop.self, new_first_name, new_last_name):
+            shop.self.first_name = new_first_name
+            shop.self.last_name = new_last_name
+            # return self.first_name + ' ' + self.last_name
             # customer_name = input(first_name + " " + last_name)
             # return self.customer_name
 
-customer = Shop('a', 'b', 'c')
+        get_full_name(customer, 'Rain', 'Storm')
 
+        change_first_name(customer, '')
 
-        def add_to_cart(self):
+        def add_to_cart(self, run, cart[]):
+            self.cart.append(run)
             return self.cart
-                for item in self.cart:
+            for item in self.cart:
                 self.cart.append(a)
 
+
+        add_to_cart(cart('dates', 'bread', 'fruit'))
 
         def show_cart(self):
             pass
             
-        def run():
-            my_cart = Shop('Brian')
+        def run(self, a, b, c):
+            my_cart = Shop('customer')
             while True:
-                customer.first_name = input ("Hi, what is your first name?: ").lower()
-                customer.last_name = input ("What is your last name?: ")
-                cart = input("What would you like to add?: Or would you like to checkout by typing 'quit'?")
+                new_first_name = input ("Hi, what is your first name?: ").lower()
+                b = input ("What is your last name?: ")
+                cart_add = input("What would you like to add?: Or would you like to checkout by typing 'quit'?")
                 if ask == 'add': 
                     a = input("What item would you like to add?")
                     my_cart.add_to_cart()
                 elif ask == 'quit':
                     break
-            
-        
+        return(a, b, c)
+
+    customer = Shop('a', 'b', 'c')    
 
         # def remove_from_cart(self):
             #         elif opening_choice == "remove":
